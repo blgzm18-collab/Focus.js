@@ -1,3 +1,6 @@
-/* This repo is under the MIT license */
+👋 Hey there!
 
-/* No one may sell and take an repost this repo */
+This file keeps the dist/ folder in Git until focus.js has an official build
+pipeline. Future versions will place compiled and optimized bundles here.
+
+— Cove Labs
