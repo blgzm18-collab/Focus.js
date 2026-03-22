@@ -12,4 +12,4 @@ Perfect for screenshots, UI demos, bug reports, documentation, and any situation
 - 💡 Canvas‑powered — fast, local, and dependency‑free
 - 🔌 Zero setup — works with plain <img> elements
 - 🔐 Privacy‑first — nothing leaves the user’s device
-- 🧩 Modular architecture — video support will be a separate modul
+- 🧩 Modular architecture — video support will be a separate module
