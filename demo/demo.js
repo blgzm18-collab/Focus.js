@@ -1,4 +1,4 @@
-import { FocusImage } from "./src/image/FocusImage.js";
+import { FocusImage } from "../src/image/FocusImage.js";
 
 const canvas = document.getElementById("previewCanvas");
 const input = document.getElementById("imageInput");
