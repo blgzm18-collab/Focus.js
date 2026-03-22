@@ -1,4 +1,9 @@
 # **focus.js**  
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Made by Cove Labs](https://img.shields.io/badge/Made%20by-Cove%20Labs-1E90FF)
+
 ### *Redact what matters. In the browser.*
 
 **focus.js** is a lightweight, client‑side JavaScript library that lets developers highlight, blur, pixelate, or mask sensitive regions in images (and later videos).  
