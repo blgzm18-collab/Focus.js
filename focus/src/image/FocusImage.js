@@ -1,4 +1,7 @@
 import { loadImage } from "../utils/canvas.js";
+import { blur } from "./effects/blur.js";
+import { mask } from "./effects/mask.js";
+import { pixelate } from "./effects/pixelate.js";
 
 export class FocusImage {
   constructor(canvas) {
