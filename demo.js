@@ -11,3 +11,8 @@ input.addEventListener("change", async e => {
     await editor.load(file);
   }
 });
+
+// Highlight mode
+canvas.addEventListener("mousedown", e => editor.startHighlight(e));
+canvas.addEventListener("mousemove", e => editor.updateHighlight(e));
+canvas.addEventListener("mouseup", () => editor.finishHighlight());
