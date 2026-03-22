@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>focus.js — Live Preview</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      opacity: 0.8;
+      font-size: 1.2rem;
+    }
+
+    .demo-container {
+      margin-top: 2rem;
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      width: 90%;
+      max-width: 900px;
+    }
+
+    canvas {
+      width: 100%;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    .used-by {
+      margin-top: 3rem;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .used-by h2 {
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #30363d;
+    }
+
+    footer {
+      margin: 3rem 0 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>focus.js</h1>
+    <p class="tagline">Redact what matters — instantly, locally, and privately.</p>
+  </header>
+
+  <section class="demo-container">
+    <h2>Live Preview</h2>
+    <p>Try the redaction tools directly in your browser.</p>
+
+    <canvas id="previewCanvas" width="800" height="450"></canvas>
+
+    <p style="margin-top: 1rem; opacity: 0.7;">
+      (This is a simple demo canvas — full editor coming soon.)
+    </p>
+  </section>
+
+  <section class="used-by">
+    <h2>Used By</h2>
+    <div class="grid">
+      <div class="card">Pikimov</div>
+      <div class="card">Your Name Here</div>
+      <div class="card">Another Creator</div>
+      <div class="card">More Soon</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Cove Labs — focus.js
+  </footer>
+
+  <script type="module" src="dist/focus.js"></script>
+  <script>
+    // Placeholder demo script
+    const canvas = document.getElementById("previewCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#222";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#fff";
+    ctx.font = "24px sans-serif";
+    ctx.fillText("focus.js demo canvas", 20, 40);
+  </script>
+
+</body>
+</html>
