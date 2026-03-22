@@ -112,29 +112,78 @@ focus/
 ### **v1.0 — Full Video Redaction**
 - Timeline regions  
 - Frame‑by‑frame processing  
-- Optional ffmpeg.wasm export  
+
+---
+
+## 🔍 Video Export (Optional Integration)
+
+
+focus.js does not include video encoding or export by default.
+Instead, it provides a clean canvas-based redaction layer that can be attached to external encoders.
+If you want to export redacted videos, you can integrate tools like:
+- ffmpeg.wasm (github.com in Bing) — full video encoding in the browser
+- MediaRecorder API (developer.mozilla.org in Bing) — record canvas output as WebM
+- Custom pipelines using canvas frame capture
+This keeps focus.js lightweight and modular — you handle redaction, they handle export.
 
 ---
 
 ## 🤝 Contributing
+
 
 Contributions are welcome!  
 Open an issue, submit a PR, or share ideas for new features.
 
 ---
 
-## 📄 License
+## 📄 License (MIT — What This Means)
 
-This project is licensed under the **MIT License** — free to use, modify, and distribute.
+focus.js is released under the MIT License, which is one of the most permissive open‑source licenses available.
+
+## ✅ You CAN:
+
+- Use the code in personal, commercial, or enterprise projects
+
+- Modify the code however you want
+
+- Distribute your modified or unmodified versions
+
+- Sell software that includes focus.js
+
+- Integrate it into closed‑source or proprietary applications
+
+- Attach your own video export pipeline (ffmpeg.wasm, MediaRecorder, etc.)
+  
+## ❗ You MUST:
+
+- Include the original MIT license in any copy or distribution
+
+- Include the copyright notice (“Copyright © 2026 Fhabian / Cove Labs”)
+ 
+## 🚫 You CANNOT:
+
+- Hold the author liable for any damages
+
+- Claim the original authors endorse your product
+
+- Remove the license from redistributed versions
+
+---
+
+That’s it.
+
+MIT is intentionally simple — maximum freedom with minimal restrictions.
 
 ---
 
 ## ❤️ About the Project
 
-focus.js is built with a simple goal:  
-**give developers and users a fast, private, and intuitive way to hide sensitive information without relying on external services.**
+focus.js was created with a clear purpose:
+give developers and everyday users a fast, private, and intuitive way to hide sensitive information — without relying on external services or cloud uploads.
 
-Everything happens locally.  
+Your images stay on your device.
+Your videos stay in your browser.
 Your data stays yours.
 
----
+This project reflects the core philosophy of Cove Labs:
+build tools that empower creativity, protect privacy, and stay lightweight enough for anyone to use.
