@@ -8,135 +8,139 @@
 
   <style>
     /* Global */
-   /* GitHub‑style global look */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  background: #0d1117;
-  color: #c9d1d9;
-  line-height: 1.6;
-}
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
 
-html, body {
-  overflow-x: hidden;
-}
+    html, body {
+      overflow-x: hidden;
+    }
 
-/* Header */
-header {
-  width: 100%;
-  padding: 3rem 1rem;
-  text-align: center;
-  border-bottom: 1px solid #21262d;
-  background: #0d1117;
-}
+    /* Header */
+    header {
+      width: 100%;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #21262d;
+      background: #0d1117;
+    }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 0;
-  color: #f0f6fc;
-}
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+      color: #f0f6fc;
+    }
 
-.tagline {
-  margin-top: 0.5rem;
-  font-size: 1.15rem;
-  color: #8b949e;
-}
+    .tagline {
+      margin-top: 0.5rem;
+      font-size: 1.15rem;
+      color: #8b949e;
+    }
 
-/* Section containers */
-section {
-  width: 90%;
-  max-width: 900px;
-  margin: 2.5rem auto;
-}
+    /* Section containers */
+    section {
+      width: 90%;
+      max-width: 900px;
+      margin: 2.5rem auto;
+    }
 
-/* GitHub‑style card container */
-.demo-container,
-.card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  padding: 1.5rem;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
-}
+    /* GitHub‑style card container */
+    .demo-container,
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+    }
 
-/* Section titles */
-h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #f0f6fc;
-}
+    /* Section titles */
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #f0f6fc;
+    }
 
-/* Canvas */
-canvas {
-  width: 100%;
-  border-radius: 6px;
-  background: #0d1117;
-  border: 1px solid #30363d;
-  margin-top: 1rem;
-}
+    /* Canvas */
+    canvas {
+      width: 100%;
+      border-radius: 6px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      margin-top: 1rem;
+    }
 
-/* Used By grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
+    /* Used By grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
 
-.card {
-  text-align: center;
-  font-size: 1rem;
-  color: #c9d1d9;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
+    .card {
+      text-align: center;
+      font-size: 1rem;
+      color: #c9d1d9;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
 
-.card:hover {
-  background: #1f2937;
-  border-color: #3b434c;
-}
+    .card:hover {
+      background: #1f2937;
+      border-color: #3b434c;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  color: #8b949e;
-  border-top: 1px solid #21262d;
-  margin-top: 3rem;
-}
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #8b949e;
+      border-top: 1px solid #21262d;
+      margin-top: 3rem;
+    }
 
-/* Purpose section */
-.purpose {
-  width: 90%;
-  max-width: 900px;
-  margin: 2.5rem auto;
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  padding: 1.5rem 1.8rem;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
-}
+    /* Purpose section */
+    .purpose {
+      width: 90%;
+      max-width: 900px;
+      margin: 2.5rem auto;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1.5rem 1.8rem;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+    }
 
-.purpose h2 {
-  margin-top: 0;
-  font-size: 1.6rem;
-  color: #f0f6fc;
-}
+    .purpose h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      color: #f0f6fc;
+    }
 
-.purpose p {
-  color: #c9d1d9;
-  margin-bottom: 1.2rem;
-}
+    .purpose p {
+      color: #c9d1d9;
+      margin-bottom: 1.2rem;
+    }
 
-/* Highlight box (adds pizazz without breaking GitHub style) */
-.highlight-box {
-  background: #1f6feb22;
-  border-left: 4px solid #1f6feb;
-  padding: 0.8rem 1rem;
-  border-radius: 4px;
-  color: #c9d1d9;
-  font-size: 0.95rem;
-}
+    /* Highlight box */
+    .highlight-box {
+      background: #1f6feb22;
+      border-left: 4px solid #1f6feb;
+      padding: 0.8rem 1rem;
+      border-radius: 4px;
+      color: #c9d1d9;
+      font-size: 0.95rem;
+    }
+
+    /* Upload control */
+    .controls {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 
@@ -167,8 +171,12 @@ footer {
   <section class="demo-container">
     <h2>Live Preview</h2>
     <p class="section-desc">
-      Interact with the canvas below to explore how focus.js handles redaction, masking, and highlighting.
+      Upload an image and highlight areas directly on the canvas.
     </p>
+
+    <div class="controls">
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
 
     <canvas id="previewCanvas" width="800" height="450"></canvas>
 
@@ -195,19 +203,8 @@ footer {
     © 2026 Cove Labs — focus.js
   </footer>
 
-  <script type="module" src="dist/focus.js"></script>
-  <script>
-    // Placeholder demo script
-    const canvas = document.getElementById("previewCanvas");
-    const ctx = canvas.getContext("2d");
-
-    ctx.fillStyle = "#222";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "#fff";
-    ctx.font = "24px sans-serif";
-    ctx.fillText("focus.js demo canvas", 20, 40);
-  </script>
+  <!-- Load your real demo script -->
+  <script type="module" src="demo/demo.js"></script>
 
 </body>
 </html>
