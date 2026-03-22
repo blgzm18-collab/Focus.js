@@ -1,1 +1,30 @@
-
+{
+  "name": "focus.js",
+  "version": "0.1.0",
+  "description": "A lightweight JavaScript library for highlighting, blurring, and redacting sensitive regions in images and videos.",
+  "main": "dist/focus.js",
+  "module": "dist/focus.esm.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo \"No build step yet\"",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "image",
+    "video",
+    "redact",
+    "blur",
+    "pixelate",
+    "highlight",
+    "canvas",
+    "privacy",
+    "javascript",
+    "client-side"
+  ],
+  "author": "Fhabian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/focus.js.git"
+  }
+}
