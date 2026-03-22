@@ -1,41 +1,69 @@
-# **focus.js**  
+<h1 align="center" style="
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #1e90ff, #00eaff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 
+    0 0 10px rgba(0, 234, 255, 0.6),
+    0 0 20px rgba(0, 234, 255, 0.6),
+    0 0 40px rgba(0, 234, 255, 0.6);
+">
+  focus.js
+</h1>
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Made by Cove Labs](https://img.shields.io/badge/Made%20by-Cove%20Labs-1E90FF)
+---
 
-### *Redact what matters. In the browser.*
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Project Status">
+  <img src="https://img.shields.io/badge/Made%20by-Cove%20Labs-1E90FF" alt="Cove Labs">
+  <img src="https://img.shields.io/badge/Privacy-Local%20Only-ff69b4" alt="Privacy Badge">
+  <img src="https://img.shields.io/badge/Focus-Redaction%20Tools-8A2BE2" alt="Focus Tools">
+</p>
 
-**focus.js** is a lightweight, client‑side JavaScript library that lets developers highlight, blur, pixelate, or mask sensitive regions in images (and later videos).  
-Everything runs locally in the browser — no uploads, no servers, no privacy risks.
+## Redact what matters — instantly, and entirely in your browser.
 
-Perfect for screenshots, UI demos, bug reports, documentation, and any situation where sensitive info needs to stay hidden.
+<b>focus.js</b> is a lightweight, privacy‑first JavaScript library for highlighting, blurring, pixelating, or masking sensitive regions in images — with video support on the way.
+
+Everything runs <b>locally</b>, powered by the browser’s canvas API. No uploads. No servers. No external processing. Just fast, intuitive redaction that keeps your data exactly where it belongs: <b>with you</b>.
+
+Whether you're preparing screenshots, UI demos, bug reports, documentation, or sharing content that contains personal information, focus.js gives you a clean, modern toolkit to hide what needs hiding — without slowing you down.
+
 
 ---
 
 ## ✨ Features (v0.1 – Image MVP)
 
-- 🖼️ **Image highlighting** — draw semi‑transparent boxes to mark sensitive areas  
-- 🎯 **Region‑based operations** — define exact coordinates for redaction  
-- 💡 **Canvas‑powered** — fast, local, and dependency‑free  
-- 🔌 **Zero setup** — works with plain `<img>` elements  
-- 🔐 **Privacy‑first** — nothing leaves the user’s device  
-- 🧩 **Modular architecture** — video support will be a separate module  
+- 🖼️ **Image highlighting** — draw semi‑transparent boxes to mark sensitive areas
+  
+- 🎯 **Region‑based operations** — define exact coordinates for redaction
+
+- 💡 **Canvas‑powered** — fast, local, and dependency‑free
+  
+- 🔌 **Zero setup** — works with plain `<img>` elements
+  
+- 🔐 **Privacy‑first** — nothing leaves the user’s device
+  
+- 🧩 **Modular architecture** — video support will be a separate module 
 
 ---
 
 ## 🚀 Getting Started
 
-### Install (coming soon)
-```bash
+Installation <b>(coming soon)</b>
+
+```
 npm install focus.js
 ```
 
-For now, clone the repo and import directly:
 
-```html
+Until the first npm release is published, you can clone the repository and import the library directly:
+```
 <script type="module" src="dist/focus.js"></script>
 ```
+
+This gives you immediate access to the core redaction tools while development continues toward the first stable release
 
 ---
 
@@ -86,8 +114,10 @@ focus/
   LICENSE
 ```
 
-- **image/** → everything for static images  
-- **video/** → future video support (kept separate on purpose)  
+- **image/** → everything for static images
+   
+- **video/** → future video support (kept separate on purpose)
+  
 - **utils/** → shared helpers  
 
 ---
@@ -95,8 +125,11 @@ focus/
 ## 🛣️ Roadmap
 
 ### **v0.1 — Image Highlighting (current)**
-- Load image into canvas  
-- Draw highlight regions  
+
+- Load image into canvas
+  
+- Draw highlight regions
+  
 - Export as data URL  
 
 ### **v0.2 — Image Redaction Tools**
@@ -105,39 +138,79 @@ focus/
 - Solid mask regions  
 
 ### **v0.3 — Interactive Editor**
-- Click‑and‑drag region selection  
-- Resize handles  
+
+- Click‑and‑drag region selection
+  
+- Resize handles
+  
 - Region list + editing  
 
 ### **v0.4 — Video Frame Redaction**
-- Seek to timestamp  
-- Redact single frames  
+
+- Seek to timestamp
+  
+- Redact single frames
+  
 - Export as image  
 
 ### **v1.0 — Full Video Redaction**
-- Timeline regions  
+- Timeline regions
+  
 - Frame‑by‑frame processing  
 
 ---
 
 ## 🔍 Video Export (Optional Integration)
 
+focus.js does not include a built‑in video exporter.
+Instead, it provides a canvas‑based redaction layer that you can attach to any encoding pipeline you prefer.
 
-focus.js does not include video encoding or export by default.
-Instead, it provides a clean canvas-based redaction layer that can be attached to external encoders.
-If you want to export redacted videos, you can integrate tools like:
-- ffmpeg.wasm (github.com in Bing) — full video encoding in the browser
-- MediaRecorder API (developer.mozilla.org in Bing) — record canvas output as WebM
-- Custom pipelines using canvas frame capture
-This keeps focus.js lightweight and modular — you handle redaction, they handle export.
+<b>This means:</b>
+
+- focus.js handles the redaction
+
+- you (or other developers) handle the export
+  
+<b>If you want to export redacted videos, you can integrate tools like:</b>
+
+- ffmpeg.wasm — full video encoding directly in the browser
+  
+- MediaRecorder API — record the redacted canvas stream as WebM
+  
+- Custom pipelines — capture frames and encode them however you like
+  
+This design keeps focus.js lightweight, modular, and privacy‑first.
+You stay in control of how the final video is encoded, stored, or shared.
 
 ---
 
 ## 🤝 Contributing
 
+Contributions are always welcome — whether you're fixing a bug, improving documentation, or adding new features.
 
-Contributions are welcome!  
-Open an issue, submit a PR, or share ideas for new features.
+<b>How to Contribute</b>
+  
+- Fork the repository
+  
+- Create a new branch for your feature or fix
+  
+- Commit your changes with clear messages
+  
+- Open a pull request describing what you changed and why
+  
+<b>Contribution Guidelines</b>
+
+- Keep code clean, readable, and modular
+  
+- Follow the project's privacy‑first philosophy
+  
+- Be respectful and constructive in discussions
+  
+- Make sure your changes don’t break existing functionality
+
+- Include the MIT license header in new files when appropriate
+
+If you're unsure where to start, check the Issues tab for tasks labeled good first issue or help wanted.
 
 ---
 
@@ -175,9 +248,54 @@ focus.js is released under the MIT License, which is one of the most permissive 
 
 ---
 
+## 🧠 Why MIT?
+
+focus.js uses the MIT License because it reflects the values behind Cove Labs:
+
+- Maximum freedom — developers can use, modify, and integrate the library in any project
+
+- Commercial‑friendly — studios, companies, and indie devs can ship products with it
+  
+- No gatekeeping — no restrictive clauses, no legal friction, no hidden obligations
+  
+- Privacy‑aligned — keeping the library simple and local means no cloud dependencies
+  
+- Community‑driven — anyone can contribute, fork, or build tools on top of it
+
+MIT ensures focus.js stays accessible, open, and future‑proof — exactly how a privacy‑first tool should be
+---
+
 That’s it.
 
 MIT is intentionally simple — maximum freedom with minimal restrictions.
+
+---
+
+## 📜 Code of Conduct
+
+To keep the focus.js community welcoming and productive, we follow a few simple principles:
+
+1. Be Respectful
+Treat everyone with kindness. Disagreements happen — hostility doesn’t need to.
+
+3. Be Constructive
+Offer feedback that helps the project grow. Critique ideas, not people.
+
+4. Be Inclusive
+Everyone is welcome — beginners, experts, hobbyists, and professionals.
+
+5. No Harassment
+Any form of harassment, discrimination, or abusive behavior is not tolerated.
+
+6. Keep Discussions Relevant
+Stay on topic and keep conversations focused on improving the project.
+
+7. Protect Privacy
+Do not share sensitive data, personal information, or private content in issues or discussions.
+
+8. Follow the License
+Respect the MIT License and include it when redistributing the project.
+If someone violates these guidelines, maintainers may take appropriate action, including warnings or removal from discussions.
 
 ---
 
@@ -192,3 +310,21 @@ Your data stays yours.
 
 This project reflects the core philosophy of Cove Labs:
 build tools that empower creativity, protect privacy, and stay lightweight enough for anyone to use.
+
+---
+
+## 📬 Contact
+
+If you have questions, suggestions, or want to contribute to focus.js, feel free to reach out:
+Primary Email:
+
+## 📧 gzmbl18@gmail.com
+
+Secondary Email (checked less frequently):
+
+## 📧 Jw4Lk3r16@hotmail.com
+
+Whether you're reporting a bug, proposing a feature, or just saying hi, you're welcome to reach out anytime.
+
+---
+
